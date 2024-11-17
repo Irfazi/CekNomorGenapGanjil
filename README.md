@@ -22,7 +22,17 @@ Kondisional (if-else), Validasi input
 ## 4. Events:
 A.ActionListener untuk tombol Cek
 ~
-private void btnPeriksaActionPerformed(java.awt.event.ActionEvent evt) {                                           
+private void btnPeriksaActionPerformed(java.awt.event.ActionEvent evt) { 
+try {
+    int angka = Integer.parseInt(Filed.getText());
+    if (angka % 2 == 0) {
+        lblHasil.setText("Angka " + angka + " adalah Genap");
+    } else {
+        lblHasil.setText("Angka " + angka + " adalah Ganjil");
+    }
+} catch (NumberFormatException e) {
+    JOptionPane.showMessageDialog(this, "Masukkan angka yang valid!", "Error", JOptionPane.ERROR_MESSAGE);
+}
         try {
          int angka = Integer.parseInt(Filed.getText());
          String hasil = "Angka " + angka;
@@ -95,7 +105,7 @@ private void FiledFocusGained(java.awt.event.FocusEvent evt) {
 ~
 
 ## Contoh Gambar Project Setelah di Run
-![](https://github.com/firaaaa10/Tugas1_AplikasiCekNomorGenapAtauGanjil/blob/main/Cuplikan%20layar%202024-11-04%20102016.png)
+![]()
  
 
 ## Indikator Penilaian:
