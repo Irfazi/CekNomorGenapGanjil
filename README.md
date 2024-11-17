@@ -105,7 +105,7 @@ private void FiledFocusGained(java.awt.event.FocusEvent evt) {
 ~
 
 ## Contoh Gambar Project Setelah di Run
-![]()
+![](https://github.com/Irfazi/CekNomorGenapGanjil/blob/main/Screenshot%202024-11-17%20171700.png)
  
 
 ## Indikator Penilaian:
